@@ -1,0 +1,30 @@
+{
+  "topic": "income",
+  "trade": "electrician",
+  "claim": "ITI Electrician graduates in Maharashtra earned a median of ₹12,000/month in 2019 (EXPIRED DATA).",
+  "value": {
+    "median_monthly_income": 12000,
+    "currency": "INR",
+    "period": "first_year",
+    "sample_size": 800,
+    "year": "2019-20"
+  },
+  "source": {
+    "title": "Maharashtra ITI Graduate Earnings Survey 2019-20 (EXPIRED)",
+    "authority": "Directorate of Vocational Education and Training, Maharashtra",
+    "source_type": "survey",
+    "url": null,
+    "document_ref": "DVET-EARN-2019-20-EXPIRED.pdf",
+    "published_date": "2020-12-31",
+    "retrieved_date": "2021-02-15"
+  },
+  "geography": { "level": "state", "code": "MH" },
+  "applicability": "EXPIRED DATA - This record is intentionally marked as expired (review_due in 2021) to demonstrate freshness filtering. Income data from 2019-20 is outdated.",
+  "language_variants": {
+    "hi": { "claim": "महाराष्ट्र में ITI इलेक्ट्रिशियन स्नातकों ने 2019 में ₹12,000/माह की औसत आय अर्जित की (समाप्त डेटा)।", "applicability": "समाप्त डेटा - यह रिकॉर्ड जानबूझकर समाप्त (review_due 2021 में) के रूप में चिह्नित है ताकि ताजगी फिल्टरिंग दिखाई जा सके। 2019-20 का आय डेटा पुराना है।", "reviewed": true }
+  },
+  "verified_date": "2021-02-20",
+  "review_due": "2022-02-20",
+  "status": "expired",
+  "is_demo": true
+}

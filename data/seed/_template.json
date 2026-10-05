@@ -1,0 +1,25 @@
+{
+  "id": "rec_template_001",
+  "topic": "progression",
+  "trade": "electrician",
+  "claim": "PLACEHOLDER: plain-language claim goes here",
+  "value": null,
+  "source": {
+    "title": "PLACEHOLDER: official document title",
+    "authority": "PLACEHOLDER: issuing body",
+    "source_type": "official_notification",
+    "url": null,
+    "document_ref": "data/sources/PLACEHOLDER.pdf",
+    "published_date": null,
+    "retrieved_date": "YYYY-MM-DD"
+  },
+  "geography": { "level": "state", "code": "PLACEHOLDER" },
+  "applicability": "PLACEHOLDER: conditions, eligibility, exceptions",
+  "language_variants": {
+    "hi": { "claim": "", "applicability": "", "reviewed": false }
+  },
+  "verified_date": "YYYY-MM-DD",
+  "review_due": "YYYY-MM-DD",
+  "status": "needs_review",
+  "is_demo": true
+}

@@ -1,0 +1,31 @@
+{
+  "topic": "progression",
+  "trade": "electrician",
+  "claim": "National Credit Framework (NCrF) allows credit transfer from ITI Electrician (NSQF Level 4) to Diploma/Degree programs.",
+  "value": {
+    "nsqf_level_iti": 4,
+    "nsqf_level_diploma": 5,
+    "nsqf_level_degree": 6,
+    "credit_transfer_enabled": true,
+    "credits_iti": 40,
+    "credits_diploma": 80
+  },
+  "source": {
+    "title": "National Credit Framework (NCrF) - Credit Transfer Guidelines 2023",
+    "authority": "University Grants Commission (UGC) / Ministry of Education",
+    "source_type": "official_notification",
+    "url": "https://www.ugc.gov.in/pdfnews/4048358_NCrF-Guidelines.pdf",
+    "document_ref": "NCrF-Guidelines-2023.pdf",
+    "published_date": "2023-08-10",
+    "retrieved_date": "2024-01-15"
+  },
+  "geography": { "level": "national", "code": "IN" },
+  "applicability": "National framework applicable across India. Actual credit transfer depends on institution-specific mapping and approval. ITI Electrician (NSQF Level 4) typically maps to 40 credits towards Diploma (Level 5).",
+  "language_variants": {
+    "hi": { "claim": "राष्ट्रीय क्रेडिट फ्रेमवर्क (NCrF) ITI इलेक्ट्रिशियन (NSQF लेवल 4) से डिप्लोमा/डिग्री प्रोग्राम में क्रेडिट ट्रांसफर की अनुमति देता है।", "applicability": "भारत भर में लागू राष्ट्रीय फ्रेमवर्क। वास्तविक क्रेडिट ट्रांसफर संस्थान-विशिष्ट मैपिंग और अनुमोदन पर निर्भर करता है।", "reviewed": true }
+  },
+  "verified_date": "2024-01-20",
+  "review_due": "2025-01-20",
+  "status": "verified",
+  "is_demo": true
+}

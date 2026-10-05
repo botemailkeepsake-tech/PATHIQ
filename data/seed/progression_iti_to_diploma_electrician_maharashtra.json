@@ -1,0 +1,28 @@
+{
+  "topic": "degree_foreclosure",
+  "trade": "electrician",
+  "claim": "ITI Electrician graduates are eligible for lateral entry into 2nd year of Diploma in Electrical Engineering in Maharashtra polytechnics.",
+  "value": {
+    "lateral_entry_year": 2,
+    "diploma_program": "Electrical Engineering",
+    "credit_transfer_eligible": true
+  },
+  "source": {
+    "title": "Maharashtra State Board of Technical Education Lateral Entry Notification 2024",
+    "authority": "Maharashtra State Board of Technical Education (MSBTE)",
+    "source_type": "official_notification",
+    "url": "https://msbte.org.in/lateral-entry-2024",
+    "document_ref": "MSBTE-LE-2024-Electrical.pdf",
+    "published_date": "2024-04-01",
+    "retrieved_date": "2024-04-20"
+  },
+  "geography": { "level": "state", "code": "MH" },
+  "applicability": "Applicable to NCVT-affiliated ITI Electrician graduates with minimum 60% marks. Admission through centralized admission process (CAP). Subject to seat availability in polytechnics.",
+  "language_variants": {
+    "hi": { "claim": "ITI इलेक्ट्रिशियन स्नातक महाराष्ट्र के पॉलिटेक्निक में इलेक्ट्रिकल इंजीनियरिंग डिप्लोमा के दूसरे वर्ष में लेटरल एंट्री के पात्र हैं।", "applicability": "न्यूनतम 60% अंकों वाले NCVT-संबद्ध ITI इलेक्ट्रिशियन स्नातकों के लिए लागू। केंद्रीकृत प्रवेश प्रक्रिया (CAP) के माध्यम से प्रवेश। पॉलिटेक्निक में सीट उपलब्धता के अधीन।", "reviewed": true }
+  },
+  "verified_date": "2024-04-25",
+  "review_due": "2025-04-25",
+  "status": "verified",
+  "is_demo": true
+}

@@ -1,0 +1,28 @@
+{
+  "topic": "local_opportunity",
+  "trade": "electrician",
+  "claim": "National-level data shows ITI Electrician demand growing at 8% annually across India due to infrastructure and renewable energy sectors.",
+  "value": {
+    "annual_growth_rate": 8,
+    "sectors": ["infrastructure", "renewable_energy", "manufacturing", "construction"],
+    "year": "2023-24"
+  },
+  "source": {
+    "title": "National Skill Development Corporation Sector Skill Report 2023-24 - Electrical",
+    "authority": "National Skill Development Corporation (NSDC)",
+    "source_type": "government_report",
+    "url": "https://nsdcindia.org/sector-skill-report-2023-24-electrical",
+    "document_ref": "NSDC-SSR-2023-24-Electrical.pdf",
+    "published_date": "2024-03-31",
+    "retrieved_date": "2024-04-20"
+  },
+  "geography": { "level": "national", "code": "IN" },
+  "applicability": "National-level aggregate. No state or district-level breakdown available for this specific metric. Shows overall demand trend for electricians across sectors.",
+  "language_variants": {
+    "hi": { "claim": "राष्ट्रीय स्तर के डेटा से पता चलता है कि ITI इलेक्ट्रिशियन की मांग बुनियादी ढांचे और नवीकरणीय ऊर्जा क्षेत्रों के कारण भारत भर में सालाना 8% की दर से बढ़ रही है।", "applicability": "राष्ट्रीय स्तर का समग्र डेटा। इस विशिष्ट मेट्रिक के लिए कोई राज्य या जिला-स्तरीय ब्रेकडाउन उपलब्ध नहीं है। सभी क्षेत्रों में इलेक्ट्रिशियन की समग्र मांग प्रवृत्ति दर्शाता है।", "reviewed": true }
+  },
+  "verified_date": "2024-04-25",
+  "review_due": "2025-04-25",
+  "status": "verified",
+  "is_demo": true
+}

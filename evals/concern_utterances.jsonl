@@ -1,0 +1,25 @@
+{"id":"c001","lang":"en","text":"What if the company closes after two years?","labels":["job_security"],"synthetic":true}
+{"id":"c002","lang":"en","text":"Will he always get work in this trade?","labels":["job_security"],"synthetic":true}
+{"id":"c003","lang":"en","text":"I worry the factory will shut and he will be jobless.","labels":["job_security"],"synthetic":true}
+{"id":"c004","lang":"en","text":"Can he buy a house on this kind of salary?","labels":["income"],"synthetic":true}
+{"id":"c005","lang":"en","text":"Will the pay ever go up or stay low forever?","labels":["income"],"synthetic":true}
+{"id":"c006","lang":"en","text":"My cousin's son with a degree earns more, why would we choose this?","labels":["income","social_perception"],"synthetic":true}
+{"id":"c007","lang":"en","text":"What will our relatives say if she does not do graduation?","labels":["social_perception"],"synthetic":true}
+{"id":"c008","lang":"en","text":"People in our community think ITI is for those who failed.","labels":["social_perception"],"synthetic":true}
+{"id":"c009","lang":"en","text":"Is it safe for her to work night shifts?","labels":["safety"],"synthetic":true}
+{"id":"c010","lang":"en","text":"The work involves electricity, what if he gets hurt?","labels":["safety"],"synthetic":true}
+{"id":"c011","lang":"en","text":"Is the travel to the site safe for a girl?","labels":["safety"],"synthetic":true}
+{"id":"c012","lang":"en","text":"Can he still do B.Tech later if he wants?","labels":["degree_foreclosure"],"synthetic":true}
+{"id":"c013","lang":"en","text":"If he does ITI, will the college door be closed forever?","labels":["degree_foreclosure"],"synthetic":true}
+{"id":"c014","lang":"en","text":"Can she get a diploma after this course?","labels":["degree_foreclosure"],"synthetic":true}
+{"id":"c015","lang":"en","text":"Which centre in our area offers this course?","labels":["none"],"synthetic":true}
+{"id":"c016","lang":"en","text":"How long is the course?","labels":["none"],"synthetic":true}
+{"id":"c017","lang":"en","text":"We are happy with whatever he chooses.","labels":["none"],"synthetic":true}
+{"id":"c018","lang":"hinglish","text":"Agar company band ho gayi to uski naukri ka kya hoga?","labels":["job_security"],"synthetic":true}
+{"id":"c019","lang":"hinglish","text":"Itni salary mein ghar chal payega kya?","labels":["income"],"synthetic":true}
+{"id":"c020","lang":"hinglish","text":"Rishtedar kya kahenge agar graduation nahi kiya?","labels":["social_perception"],"synthetic":true}
+{"id":"c021","lang":"hinglish","text":"Ladki ke liye night shift safe hai kya?","labels":["safety"],"synthetic":true}
+{"id":"c022","lang":"hinglish","text":"Kya baad mein diploma ya degree kar sakta hai?","labels":["degree_foreclosure"],"synthetic":true}
+{"id":"c023","lang":"en","text":"I am worried about stable employment and whether he can study further.","labels":["job_security","degree_foreclosure"],"synthetic":true}
+{"id":"c024","lang":"en","text":"Is this a dead end?","labels":["degree_foreclosure"],"synthetic":true}
+{"id":"c025","lang":"en","text":"It seems risky.","labels":["job_security"],"synthetic":true,"note":"ambiguous; should trigger confirmation"}

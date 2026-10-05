@@ -1,0 +1,81 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: pathiq
+      POSTGRES_PASSWORD: pathiq
+      POSTGRES_DB: pathiq
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pathiq -d pathiq"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql+psycopg://pathiq:pathiq@postgres:5432/pathiq
+      - REDIS_URL=redis://redis:6379/0
+      - ENVIRONMENT=development
+      - LOG_LEVEL=INFO
+      - CONCERN_CONFIRM_THRESHOLD=0.70
+      - SESSION_RETENTION_DAYS=30
+      - SMALL_CELL_MIN=10
+      - HELPLINE_CONFIG_PATH=config/helplines.json
+      - LLM_PROVIDER=
+      - LLM_API_KEY=
+      - LLM_MODEL=
+      - EMBEDDING_PROVIDER=
+      - EMBEDDING_API_KEY=
+      - EMBEDDING_MODEL=
+      - STT_PROVIDER=
+      - STT_API_KEY=
+      - TTS_PROVIDER=
+      - TTS_API_KEY=
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app
+
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_BASE=http://localhost:8000/api/v1
+      - INTERNAL_API_BASE=http://api:8000/api/v1
+    depends_on:
+      - api
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+
+volumes:
+  postgres_data:
+  redis_data:

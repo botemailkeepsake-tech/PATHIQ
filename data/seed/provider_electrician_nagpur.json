@@ -1,0 +1,33 @@
+{
+  "topic": "provider",
+  "trade": "electrician",
+  "claim": "Government ITI Nagpur offers NCVT-affiliated Electrician trade with 84 seats per batch. 2023 placement rate: 75%.",
+  "value": {
+    "institute_name": "Government ITI Nagpur",
+    "institute_type": "government",
+    "affiliation": "NCVT",
+    "trade": "electrician",
+    "seats_per_batch": 84,
+    "placement_rate_2023": 75,
+    "contact_phone": "0712-256XXXX",
+    "address": "ITI Campus, Amravati Road, Nagpur, Maharashtra 440033"
+  },
+  "source": {
+    "title": "Government ITI Nagpur Prospectus 2024-25",
+    "authority": "Directorate of Vocational Education and Training, Maharashtra",
+    "source_type": "institutional",
+    "url": "https://iti.nagpur.gov.in/prospectus-2024-25",
+    "document_ref": "ITI-Nagpur-Prospectus-2024-25.pdf",
+    "published_date": "2024-05-01",
+    "retrieved_date": "2024-05-20"
+  },
+  "geography": { "level": "district", "code": "MH-NAG" },
+  "applicability": "Admission through centralized admission process (CAP). 30% seats reserved for women. Hostel facility available. 2023 batch placement data based on institute's own tracer study.",
+  "language_variants": {
+    "hi": { "claim": "सरकारी ITI नागपुर NCVT-संबद्ध इलेक्ट्रिशियन ट्रेड प्रदान करता है जिसमें प्रति बैच 84 सीटें हैं। 2023 प्लेसमेंट दर: 75%।", "applicability": "केंद्रीकृत प्रवेश प्रक्रिया (CAP) के माध्यम से प्रवेश। महिलाओं के लिए 30% सीटें आरक्षित। छात्रावास सुविधा उपलब्ध। 2023 बैच का प्लेसमेंट डेटा संस्थान के अपने ट्रेसर अध्ययन पर आधारित।", "reviewed": true }
+  },
+  "verified_date": "2024-05-25",
+  "review_due": "2025-05-25",
+  "status": "verified",
+  "is_demo": true
+}

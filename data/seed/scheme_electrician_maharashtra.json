@@ -1,0 +1,30 @@
+{
+  "topic": "scheme",
+  "trade": "electrician",
+  "claim": "Maharashtra's 'Pramod Mahajan Kaushalya Vikas Yojana' provides free ITI Electrician training with stipend of ₹500/month for eligible candidates.",
+  "value": {
+    "scheme_name": "Pramod Mahajan Kaushalya Vikas Yojana",
+    "training_cost": "free",
+    "monthly_stipend": 500,
+    "currency": "INR",
+    "eligibility": "Maharashtra domicile, age 14-40, 10th pass"
+  },
+  "source": {
+    "title": "Pramod Mahajan Kaushalya Vikas Yojana Guidelines 2024-25",
+    "authority": "Maharashtra State Skill Development Society (MSSDS)",
+    "source_type": "official_notification",
+    "url": "https://mssds.maharashtra.gov.in/pmkvy-guidelines-2024-25",
+    "document_ref": "MSSDS-PMKVY-2024-25.pdf",
+    "published_date": "2024-04-01",
+    "retrieved_date": "2024-04-25"
+  },
+  "geography": { "level": "state", "code": "MH" },
+  "applicability": "Available at government and empanelled private ITIs. Stipend paid for duration of training (typically 12-24 months). Women candidates get additional 20% stipend. SC/ST/OBC candidates get fee exemption.",
+  "language_variants": {
+    "hi": { "claim": "महाराष्ट्र की 'प्रमोद महाजन कौशल्य विकास योजना' पात्र उम्मीदवारों को ₹500/माह स्टाइपेंड के साथ मुफ्त ITI इलेक्ट्रिशियन प्रशिक्षण प्रदान करती है।", "applicability": "सरकारी और सूचीबद्ध निजी ITI में उपलब्ध। स्टाइपेंड प्रशिक्षण की अवधि (आमतौर पर 12-24 महीने) के लिए दिया जाता है। महिला उम्मीदवारों को अतिरिक्त 20% स्टाइपेंड। SC/ST/OBC उम्मीदवारों को शुल्क छूट।", "reviewed": true }
+  },
+  "verified_date": "2024-05-01",
+  "review_due": "2025-05-01",
+  "status": "verified",
+  "is_demo": true
+}

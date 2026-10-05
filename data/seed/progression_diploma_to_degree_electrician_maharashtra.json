@@ -1,0 +1,28 @@
+{
+  "topic": "progression",
+  "trade": "electrician",
+  "claim": "Diploma in Electrical Engineering graduates are eligible for lateral entry into 2nd year of B.Tech/B.E. Electrical Engineering in Maharashtra engineering colleges.",
+  "value": {
+    "lateral_entry_year": 2,
+    "degree_program": "B.Tech/B.E. Electrical Engineering",
+    "credit_transfer_eligible": true
+  },
+  "source": {
+    "title": "Directorate of Technical Education Maharashtra Lateral Entry Rules 2024",
+    "authority": "Directorate of Technical Education (DTE), Maharashtra",
+    "source_type": "official_notification",
+    "url": "https://dte.maharashtra.gov.in/lateral-entry-rules-2024",
+    "document_ref": "DTE-LE-2024-Electrical.pdf",
+    "published_date": "2024-05-15",
+    "retrieved_date": "2024-06-01"
+  },
+  "geography": { "level": "state", "code": "MH" },
+  "applicability": "Applicable to Diploma in Electrical Engineering graduates with minimum 60% aggregate marks. Admission through CAP round. Subject to seat availability and university affiliation rules.",
+  "language_variants": {
+    "hi": { "claim": "इलेक्ट्रिकल इंजीनियरिंग में डिप्लोमा स्नातक महाराष्ट्र के इंजीनियरिंग कॉलेजों में B.Tech/B.E. इलेक्ट्रिकल इंजीनियरिंग के दूसरे वर्ष में लेटरल एंट्री के पात्र हैं।", "applicability": "न्यूनतम 60% कुल अंकों वाले इलेक्ट्रिकल इंजीनियरिंग डिप्लोमा स्नातकों के लिए लागू। CAP राउंड के माध्यम से प्रवेश। सीट उपलब्धता और विश्वविद्यालय संबद्धता नियमों के अधीन।", "reviewed": true }
+  },
+  "verified_date": "2024-06-10",
+  "review_due": "2025-06-10",
+  "status": "verified",
+  "is_demo": true
+}

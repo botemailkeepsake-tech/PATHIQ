@@ -1,0 +1,30 @@
+{
+  "topic": "income",
+  "trade": "electrician",
+  "claim": "ITI Electrician graduates in Pune district earn a median of ₹25,000/month in first year.",
+  "value": {
+    "median_monthly_income": 25000,
+    "currency": "INR",
+    "period": "first_year",
+    "sample_size": 50,
+    "year": "2023-24"
+  },
+  "source": {
+    "title": "Pune District ITI Earnings Survey 2023 (UNVERIFIED - DEMO ONLY)",
+    "authority": "Pune District Administration (UNVERIFIED)",
+    "source_type": "survey",
+    "url": null,
+    "document_ref": "Pune-DEMO-UNVERIFIED.pdf",
+    "published_date": "2024-01-15",
+    "retrieved_date": "2024-02-01"
+  },
+  "geography": { "level": "district", "code": "MH-PUN" },
+  "applicability": "DEMO DATA ONLY - This record is intentionally marked as needs_review to demonstrate abstention behavior. Small sample size (n=50) makes it unreliable for family-facing answers.",
+  "language_variants": {
+    "hi": { "claim": "पुणे जिले में ITI इलेक्ट्रिशियन स्नातकों की पहले वर्ष में औसत मासिक आय ₹25,000 है।", "applicability": "केवल डेमो डेटा - यह रिकॉर्ड जानबूझकर needs_review के रूप में चिह्नित है ताकि परिवार-सामने के उत्तर में परहेज व्यवहार दिखाया जा सके। छोटा नमूना आकार (n=50) इसे अविश्वसनीय बनाता है।", "reviewed": false }
+  },
+  "verified_date": "2024-02-10",
+  "review_due": "2024-08-10",
+  "status": "needs_review",
+  "is_demo": true
+}

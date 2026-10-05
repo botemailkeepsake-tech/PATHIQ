@@ -1,0 +1,54 @@
+{
+  "common": {
+    "appName": "PATHIQ",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next"
+  },
+  "health": {
+    "title": "System Health",
+    "apiStatus": "API Status",
+    "databaseStatus": "Database Status",
+    "redisStatus": "Redis Status",
+    "environment": "Environment",
+    "ok": "OK",
+    "failed": "Failed",
+    "degraded": "Degraded"
+  },
+  "navigation": {
+    "home": "Home",
+    "demo": "Interactive Demo",
+    "session": "Session",
+    "evidence": "Evidence",
+    "agreement": "Agreement",
+    "summary": "Summary",
+    "counsellor": "Counsellor"
+  },
+  "consent": {
+    "title": "Consent",
+    "description": "We need your consent to store session data.",
+    "parentGuardian": "I am the parent/guardian and I agree",
+    "counsellorSharing": "Allow sharing with counsellor",
+    "researchUse": "Allow anonymised research use"
+  },
+  "demo": {
+    "tagline": "When a career choice becomes a family decision.",
+    "subtitle": "Understand the concern. See the evidence. Decide together.",
+    "startSession": "Start Family Session",
+    "exploreDemo": "Explore Demo",
+    "demoMode": "Demo Mode (Synthetic Data Grounded)",
+    "steps": {
+      "step1": "01 Understand",
+      "step2": "02 Explain",
+      "step3": "03 Prove",
+      "step4": "04 Compare",
+      "step5": "05 Decide",
+      "step6": "06 Handoff"
+    }
+  }
+}

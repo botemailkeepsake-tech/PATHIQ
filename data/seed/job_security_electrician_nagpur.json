@@ -1,0 +1,29 @@
+{
+  "topic": "job_security",
+  "trade": "electrician",
+  "claim": "ITI Electrician graduates in Nagpur district have a placement rate of 68% within 6 months of completion.",
+  "value": {
+    "placement_rate": 68,
+    "period_months": 6,
+    "sample_size": 180,
+    "year": "2023-24"
+  },
+  "source": {
+    "title": "Nagpur District Skill Development Plan 2023-24",
+    "authority": "Nagpur District Administration",
+    "source_type": "government_report",
+    "url": "https://nagpur.gov.in/skill-development-plan-2023-24",
+    "document_ref": "Nagpur-DSDP-2023-24.pdf",
+    "published_date": "2024-03-01",
+    "retrieved_date": "2024-04-15"
+  },
+  "geography": { "level": "district", "code": "MH-NAG" },
+  "applicability": "Based on district-level tracer study of ITI Electrician graduates from Nagpur district ITIs. Sample size smaller than state average.",
+  "language_variants": {
+    "hi": { "claim": "नागपुर जिले में ITI इलेक्ट्रिशियन स्नातकों की 6 महीने के भीतर प्लेसमेंट दर 68% है।", "applicability": "नागपुर जिले के ITI से इलेक्ट्रिशियन ट्रेड के स्नातकों के जिला-स्तरीय ट्रेसर अध्ययन पर आधारित। नमूना आकार राज्य औसत से छोटा है।", "reviewed": true }
+  },
+  "verified_date": "2024-05-01",
+  "review_due": "2025-05-01",
+  "status": "verified",
+  "is_demo": true
+}

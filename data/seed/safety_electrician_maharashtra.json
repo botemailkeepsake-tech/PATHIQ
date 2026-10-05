@@ -1,0 +1,30 @@
+{
+  "topic": "safety",
+  "trade": "electrician",
+  "claim": "Electrical work in Maharashtra requires valid Electrical Supervisor License and adherence to Maharashtra Electricity (Safety) Regulations. Workplace injury rate for electricians is 2.3 per 1000 workers annually.",
+  "value": {
+    "injury_rate_per_1000": 2.3,
+    "license_required": "Electrical Supervisor License",
+    "regulations": "Maharashtra Electricity (Safety) Regulations 2020",
+    "sample_size": 5200,
+    "year": "2023"
+  },
+  "source": {
+    "title": "Maharashtra Occupational Safety and Health Report 2023 - Electrical Sector",
+    "authority": "Directorate of Industrial Safety and Health, Maharashtra",
+    "source_type": "government_report",
+    "url": "https://dish.maharashtra.gov.in/osh-report-2023",
+    "document_ref": "DISH-OSH-2023-Electrical.pdf",
+    "published_date": "2024-02-28",
+    "retrieved_date": "2024-03-20"
+  },
+  "geography": { "level": "state", "code": "MH" },
+  "applicability": "Based on reported workplace injuries in registered electrical establishments. Includes both fatal and non-fatal injuries. Women electricians may face additional safety considerations for night shifts and remote site work.",
+  "language_variants": {
+    "hi": { "claim": "महाराष्ट्र में इलेक्ट्रिकल कार्य के लिए वैध इलेक्ट्रिकल सुपरवाइजर लाइसेंस और महाराष्ट्र बिजली (सुरक्षा) विनियमों का पालन आवश्यक है। इलेक्ट्रिशियन की कार्यस्थल चोट दर प्रति 1000 श्रमिकों पर 2.3 वार्षिक है।", "applicability": "पंजीकृत इलेक्ट्रिकल प्रतिष्ठानों में रिपोर्ट की गई कार्यस्थल चोटों पर आधारित। घातक और गैर-घातक दोनों चोटें शामिल हैं। महिला इलेक्ट्रिशियन को रात की शिफ्ट और दूरस्थ साइट कार्य के लिए अतिरिक्त सुरक्षा विचार हो सकते हैं।", "reviewed": true }
+  },
+  "verified_date": "2024-03-25",
+  "review_due": "2025-03-25",
+  "status": "verified",
+  "is_demo": true
+}

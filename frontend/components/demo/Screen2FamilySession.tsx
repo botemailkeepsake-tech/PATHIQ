@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { CANONICAL_CONCERNS, DEMO_STUDENT_PROFILE, DEMO_PARENT_PROFILE } from "@/lib/demo-data";
 import { useSpeechRecognition } from "@/lib/useSpeechRecognition";
+import { detectConcernFromUtterance } from "@/lib/concern-detector";
 
 interface Screen2FamilySessionProps {
   onProceedToDetection: (selectedPathway: string, selectedConcernId: string, parentUtterance: string, studentUtterance: string) => void;
@@ -65,6 +66,10 @@ export function Screen2FamilySession({
     language: currentLanguage,
     onTranscriptChange: (text) => {
       setParentUtterance(text);
+      if (text.trim().length > 3) {
+        const det = detectConcernFromUtterance(text, currentLanguage);
+        setSelectedConcern(det.concernId);
+      }
     },
   });
 
@@ -83,6 +88,7 @@ export function Screen2FamilySession({
     } else {
       if (studentSpeech.isListening) studentSpeech.stopListening();
       setActiveVoiceTarget("parent");
+      parentSpeech.resetTranscript();
       parentSpeech.startListening();
     }
   };
@@ -94,12 +100,23 @@ export function Screen2FamilySession({
     } else {
       if (parentSpeech.isListening) parentSpeech.stopListening();
       setActiveVoiceTarget("student");
+      studentSpeech.resetTranscript();
       studentSpeech.startListening();
     }
   };
 
   const handleSelectSample = (sample: string) => {
     setParentUtterance(sample);
+    const det = detectConcernFromUtterance(sample, currentLanguage);
+    setSelectedConcern(det.concernId);
+  };
+
+  const handleParentUtteranceChange = (val: string) => {
+    setParentUtterance(val);
+    if (val.trim().length > 3) {
+      const det = detectConcernFromUtterance(val, currentLanguage);
+      setSelectedConcern(det.concernId);
+    }
   };
 
   const handleAdvance = () => {
@@ -290,7 +307,7 @@ export function Screen2FamilySession({
           </label>
           <textarea
             value={parentUtterance}
-            onChange={(e) => setParentUtterance(e.target.value)}
+            onChange={(e) => handleParentUtteranceChange(e.target.value)}
             rows={3}
             placeholder="e.g. ITI ke baad job milegi kya? / Will I get a job after ITI?"
             style={{
@@ -383,7 +400,14 @@ export function Screen2FamilySession({
             return (
               <button
                 key={c.id}
-                onClick={() => setSelectedConcern(c.id)}
+                onClick={() => {
+                  setSelectedConcern(c.id);
+                  if (c.id === "degree_foreclosure") setParentUtterance("ITI ke baad degree kar sakte hai kya?");
+                  else if (c.id === "income") setParentUtterance("ITI electrician ki salary kitni hoti hai?");
+                  else if (c.id === "safety") setParentUtterance("Is electrician work dangerous or safe?");
+                  else if (c.id === "social_perception") setParentUtterance("Log kya kahenge vocational trade ko dekhkar?");
+                  else if (c.id === "job_security") setParentUtterance("ITI ke baad job milegi kya?");
+                }}
                 className={`btn ${isSelected ? "btn-primary" : "btn-secondary"}`}
                 style={{
                   padding: "0.55rem 1rem",

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { CANONICAL_CONCERNS, ConcernCategory } from "@/lib/demo-data";
-import { detectConcernFromUtterance, DetectedConcernResult } from "@/lib/concern-detector";
+import { detectConcernFromUtterance, DetectedConcernResult, CONCERN_METADATA } from "@/lib/concern-detector";
 
 interface Screen3ConcernDetectionProps {
   parentUtterance: string;
@@ -14,7 +14,7 @@ interface Screen3ConcernDetectionProps {
 
 export function Screen3ConcernDetection({
   parentUtterance,
-  initialConcernId = "job_security",
+  initialConcernId,
   onConfirmConcern,
   onBack,
   currentLanguage,
@@ -22,19 +22,18 @@ export function Screen3ConcernDetection({
   const [detection, setDetection] = useState<DetectedConcernResult>(() =>
     detectConcernFromUtterance(parentUtterance || "ITI ke baad job milegi kya?", currentLanguage)
   );
-  const [activeConcernId, setActiveConcernId] = useState<string>(
-    initialConcernId || detection.concernId
-  );
+  const [activeConcernId, setActiveConcernId] = useState<string>(() => {
+    const detected = detectConcernFromUtterance(parentUtterance || "ITI ke baad job milegi kya?", currentLanguage);
+    return detected.concernId;
+  });
   const [isChanging, setIsChanging] = useState<boolean>(false);
   const [hasConfirmed, setHasConfirmed] = useState<boolean>(false);
 
   // Recalculate detection when parentUtterance changes
   useEffect(() => {
-    if (parentUtterance) {
-      const res = detectConcernFromUtterance(parentUtterance, currentLanguage);
-      setDetection(res);
-      setActiveConcernId(res.concernId);
-    }
+    const res = detectConcernFromUtterance(parentUtterance || "ITI ke baad job milegi kya?", currentLanguage);
+    setDetection(res);
+    setActiveConcernId(res.concernId);
   }, [parentUtterance, currentLanguage]);
 
   const selectedCategory: ConcernCategory =
@@ -175,7 +174,9 @@ export function Screen3ConcernDetection({
                 Reasoning &amp; Scope
               </div>
               <p style={{ fontSize: "0.92rem", color: "var(--text-main)", marginTop: "0.25rem", lineHeight: 1.5 }}>
-                {detection.explanation}
+                {activeConcernId === detection.concernId
+                  ? detection.explanation
+                  : CONCERN_METADATA[activeConcernId]?.defaultExpl || selectedCategory.description}
               </p>
             </div>
           </div>

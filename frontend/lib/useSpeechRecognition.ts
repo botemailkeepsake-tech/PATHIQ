@@ -74,6 +74,8 @@ export function useSpeechRecognition(options: SpeechRecognitionOptions = {}): Us
     (overrideLang?: string) => {
       setError(null);
       setErrorMessage(null);
+      setTranscript("");
+      setInterimTranscript("");
 
       if (typeof window === "undefined") return;
 

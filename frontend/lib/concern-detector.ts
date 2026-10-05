@@ -23,7 +23,7 @@ export interface DetectedConcernResult {
   isHighConfidence: boolean;
 }
 
-const CONCERN_METADATA: Record<
+export const CONCERN_METADATA: Record<
   string,
   { label: string; hindiLabel: string; marathiLabel: string; defaultExpl: string }
 > = {

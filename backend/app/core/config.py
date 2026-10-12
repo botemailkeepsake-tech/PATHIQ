@@ -19,11 +19,8 @@ class Settings(BaseSettings):
     session_retention_days: int = Field(default=30, validation_alias="SESSION_RETENTION_DAYS")
 
     # Database
-    database_url: str = Field(
-        default="postgresql+psycopg://saarthi:saarthi@postgres:5432/saarthi",
-        validation_alias="DATABASE_URL",
-    )
-    redis_url: str = Field(default="redis://redis:6379/0", validation_alias="REDIS_URL")
+    database_url: str = Field(validation_alias="DATABASE_URL")
+    redis_url: str | None = Field(default=None, validation_alias="REDIS_URL")
 
     # AI Providers
     llm_provider: str | None = Field(default=None, validation_alias="LLM_PROVIDER")

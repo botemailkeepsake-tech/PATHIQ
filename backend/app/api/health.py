@@ -14,7 +14,7 @@ settings = get_settings()
 @router.get("/health")
 async def health_check():
     db_status = "ok"
-    redis_status = "ok"
+    redis_status: str = "disabled"
 
     async for db in get_db():
         try:
@@ -23,15 +23,17 @@ async def health_check():
             logger.error("health_check_db_failed", error=str(e))
             db_status = "failed"
 
-    try:
-        redis_client = redis.from_url(settings.redis_url)
-        await redis_client.ping()
-        await redis_client.aclose()
-    except Exception as e:
-        logger.error("health_check_redis_failed", error=str(e))
-        redis_status = "failed"
+    if settings.redis_url and settings.redis_url.strip():
+        redis_status = "ok"
+        try:
+            redis_client = redis.from_url(settings.redis_url)
+            await redis_client.ping()
+            await redis_client.aclose()
+        except Exception as e:
+            logger.error("health_check_redis_failed", error=str(e))
+            redis_status = "failed"
 
-    overall_status = "ok" if db_status == "ok" and redis_status == "ok" else "degraded"
+    overall_status = "ok" if db_status == "ok" and redis_status in ("ok", "disabled") else "degraded"
 
     return {
         "status": overall_status,

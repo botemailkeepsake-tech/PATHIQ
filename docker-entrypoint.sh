@@ -49,9 +49,9 @@ cd /app/backend
 uvicorn app.main:app --host 0.0.0.0 --port 8000 &
 FASTAPI_PID=$!
 
-# 2. Wait briefly for FastAPI to start and verify responsiveness
+# 2. Wait for FastAPI to start and verify responsiveness
 echo "Waiting for FastAPI to initialize on port 8000..."
-MAX_RETRIES=15
+MAX_RETRIES=60
 COUNTER=0
 while [ $COUNTER -lt $MAX_RETRIES ]; do
     if curl -s http://127.0.0.1:8000/api/v1/health >/dev/null 2>&1; then
@@ -59,15 +59,17 @@ while [ $COUNTER -lt $MAX_RETRIES ]; do
         break
     fi
     if ! kill -0 "$FASTAPI_PID" 2>/dev/null; then
-        echo "Warning: FastAPI process exited early."
-        break
+        echo "Error: FastAPI process exited unexpectedly."
+        exit 1
     fi
     sleep 1
     COUNTER=$((COUNTER + 1))
 done
 
 if [ $COUNTER -eq $MAX_RETRIES ]; then
-    echo "Notice: FastAPI health check timed out, proceeding to start frontend (fallback enabled)."
+    echo "Error: FastAPI health check timed out after ${MAX_RETRIES}s. Aborting."
+    kill -TERM "$FASTAPI_PID" 2>/dev/null || true
+    exit 1
 fi
 
 # 3. Start Next.js frontend in the foreground on ${PORT:-10000}

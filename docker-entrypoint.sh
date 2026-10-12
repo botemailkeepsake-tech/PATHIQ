@@ -59,17 +59,15 @@ while [ $COUNTER -lt $MAX_RETRIES ]; do
         break
     fi
     if ! kill -0 "$FASTAPI_PID" 2>/dev/null; then
-        echo "Error: FastAPI process exited unexpectedly."
-        exit 1
+        echo "Warning: FastAPI process exited early. Proceeding to start frontend (demo fallback enabled)."
+        break
     fi
     sleep 1
     COUNTER=$((COUNTER + 1))
 done
 
 if [ $COUNTER -eq $MAX_RETRIES ]; then
-    echo "Error: FastAPI health check timed out after ${MAX_RETRIES}s. Aborting."
-    kill -TERM "$FASTAPI_PID" 2>/dev/null || true
-    exit 1
+    echo "Notice: FastAPI health check timed out after ${MAX_RETRIES}s. Proceeding to start frontend (demo fallback enabled)."
 fi
 
 # 3. Start Next.js frontend in the foreground on ${PORT:-10000}

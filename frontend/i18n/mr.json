@@ -18,7 +18,10 @@
     "environment": "पर्यावरण",
     "ok": "सक्रिय",
     "failed": "अयशस्वी",
-    "degraded": "मंदावलेले"
+    "degraded": "मंदावलेले",
+    "disabled": "निष्क्रिय (पर्यायी)",
+    "development": "विकास",
+    "production": "उत्पादन"
   },
   "navigation": {
     "home": "मुख्यपृष्ठ",

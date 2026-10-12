@@ -7,7 +7,7 @@ module.exports = {
   },
   testPathIgnorePatterns: ["<rootDir>/.next/", "<rootDir>/node_modules/"],
   transform: {
-    "^.+\\.(ts|tsx)$": ["ts-jest", { tsconfig: "tsconfig.json", useESM: false }],
+    "^.+\\.(ts|tsx)$": ["ts-jest", { tsconfig: "tsconfig.jest.json", useESM: false }],
   },
   transformIgnorePatterns: [
     "/node_modules/(?!.*\\.mjs$)",

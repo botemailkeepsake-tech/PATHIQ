@@ -18,7 +18,10 @@
     "environment": "Environment",
     "ok": "OK",
     "failed": "Failed",
-    "degraded": "Degraded"
+    "degraded": "Degraded",
+    "disabled": "Disabled (Optional)",
+    "development": "Development",
+    "production": "Production"
   },
   "navigation": {
     "home": "Home",

@@ -18,7 +18,10 @@
     "environment": "पर्यावरण",
     "ok": "ठीक है",
     "failed": "विफल",
-    "degraded": "क्षतिग्रस्त"
+    "degraded": "क्षतिग्रस्त",
+    "disabled": "निष्क्रिय (वैकल्पिक)",
+    "development": "विकास",
+    "production": "उत्पादन"
   },
   "navigation": {
     "home": "होम",

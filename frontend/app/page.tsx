@@ -168,15 +168,40 @@ function HealthStatus() {
     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1rem" }}>
       <StatusCard label={t("health.apiStatus")} value={health.status} color={statusColor} />
       <StatusCard label={t("health.databaseStatus")} value={health.database} color={health.database === "ok" ? "var(--accent-green)" : "red"} />
-      <StatusCard label={t("health.redisStatus")} value={health.redis} color={health.redis === "ok" ? "var(--accent-green)" : "red"} />
-      <StatusCard label={t("health.environment")} value={health.environment} color="var(--accent-blue)" />
+      <StatusCard
+        label={t("health.redisStatus")}
+        value={health.redis}
+        color={
+          health.redis === "ok"
+            ? "var(--accent-green)"
+            : health.redis === "disabled"
+            ? "var(--accent-blue)"
+            : "red"
+        }
+      />
+      <StatusCard
+        label={t("health.environment")}
+        value={t(`health.${health.environment}`) || health.environment}
+        color="var(--accent-blue)"
+        translateValue={false}
+      />
     </div>
   );
 }
 
-function StatusCard({ label, value, color }: { label: string; value: string; color: string }) {
+function StatusCard({
+  label,
+  value,
+  color,
+  translateValue = true,
+}: {
+  label: string;
+  value: string;
+  color: string;
+  translateValue?: boolean;
+}) {
   const { t } = useTranslation();
-  const displayValue = t(`health.${value}`) || value;
+  const displayValue = translateValue ? t(`health.${value}`) || value : value;
   return (
     <div style={{ padding: "1rem", border: `1px solid var(--border-subtle)`, borderRadius: "var(--radius-sm)", background: "var(--bg-card)" }}>
       <div style={{ fontSize: "0.8rem", color: "var(--text-muted)", marginBottom: "0.25rem", textTransform: "uppercase", fontWeight: 600 }}>{label}</div>

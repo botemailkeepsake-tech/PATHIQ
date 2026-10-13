@@ -8,7 +8,9 @@
     "cancel": "Cancel",
     "confirm": "Confirm",
     "back": "Back",
-    "next": "Next"
+    "next": "Next",
+    "send": "Send",
+    "dismiss": "Dismiss"
   },
   "health": {
     "title": "System Health",
@@ -26,6 +28,7 @@
   "navigation": {
     "home": "Home",
     "demo": "Interactive Demo",
+    "familyChat": "Family Chat",
     "session": "Session",
     "evidence": "Evidence",
     "agreement": "Agreement",
@@ -52,6 +55,71 @@
       "step4": "04 Compare",
       "step5": "05 Decide",
       "step6": "06 Handoff"
+    }
+  },
+  "familyChat": {
+    "title": "PATHIQ Family Chat",
+    "subtitle": "AI career guidance assistant for parents",
+    "betaLabel": "Beta",
+    "aiDisclaimer": "I am an AI assistant, not a human counsellor. I only share verified, sourced evidence. For complex cases, I can connect you with a qualified counsellor.",
+    "startConversation": "Start a conversation",
+    "startHint": "Ask me about ITI trades, job prospects, salaries, safety, or future education pathways.",
+    "startButton": "Begin Chat",
+    "consentFirst": "Please grant consent to start chatting",
+    "placeholder": "Type your question or use voice input...",
+    "thinking": "PATHIQ is thinking...",
+    "retrying": "Retrying...",
+    "you": "You",
+    "assistant": "PATHIQ",
+    "evidenceSources": "Evidence Sources",
+    "demoLabel": "DEMO DATA",
+    "verified": "Verified",
+    "source": "Source",
+    "authority": "Authority",
+    "type": "Type",
+    "published": "Published",
+    "geography": "Geography",
+    "verifiedDate": "Verified",
+    "applicability": "Applicability",
+    "abstentionTitle": "Insufficient Evidence",
+    "nextAction": "Suggested next step",
+    "escalationTitle": "Counsellor Handoff Suggested",
+    "escalationDistress": "I'm concerned about your wellbeing. Please consider speaking with a counsellor or contacting a helpline.",
+    "escalationOther": "This question needs human expertise. Would you like to speak with a counsellor?",
+    "distressTitle": "Immediate Support Available",
+    "distressMessage": "I'm concerned about what you shared. Please contact a helpline now: iCall (9152987821) or Vandrevala Foundation (1860-2662-345). You don't have to face this alone.",
+    "suggestedQuestions": "Suggested questions",
+    "footerHint": "Press Enter to send • Shift+Enter for new line • Click 🎤 for voice input",
+    "consentTitle": "Consent Required",
+    "consentAgree": "I agree, start chat",
+    "consentDescription": "By proceeding, you agree to the terms shown above.",
+    "handoffTitle": "Counsellor Handoff",
+    "handoffDescription": "Your question involves a situation that may benefit from speaking with a qualified human counsellor. PATHIQ can prepare a summary of your conversation to share with them.",
+    "handoffNote": "Important:",
+    "handoffItem1": "A counsellor is not guaranteed to be available immediately",
+    "handoffItem2": "Handoff requires your explicit consent",
+    "handoffItem3": "Your conversation summary will be shared only with the counsellor",
+    "handoffItem4": "You can continue chatting with PATHIQ regardless",
+    "handoffConsentNote": "Separate consent is required for counsellor handoff. This is different from session consent.",
+    "handoffAccept": "Yes, connect me",
+    "handoffDecline": "No, continue with PATHIQ",
+    "sessionEnded": "Session ended. Thank you for using PATHIQ.",
+    "errors": {
+      "sessionFailed": "Failed to start session. Please try again.",
+      "consentFailed": "Failed to record consent. Please try again.",
+      "messageFailed": "Failed to send message. Please try again."
+    },
+    "sourceTypes": {
+      "official_notification": "Official Notification",
+      "government_report": "Government Report",
+      "survey": "Survey",
+      "institutional": "Institutional Data",
+      "other": "Other"
+    },
+    "geography": {
+      "district": "District",
+      "state": "State",
+      "national": "National"
     }
   }
 }

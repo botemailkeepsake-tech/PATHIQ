@@ -85,6 +85,9 @@ export default function HomePage() {
           <a href="/demo" className="btn btn-primary btn-sm">
             Interactive Demo
           </a>
+          <a href="/family-chat" className="btn btn-primary btn-sm">
+            {t("navigation.familyChat")}
+          </a>
           <a href="/session" className="btn btn-secondary btn-sm">
             {t("navigation.session")}
           </a>

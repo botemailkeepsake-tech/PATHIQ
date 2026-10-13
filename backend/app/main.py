@@ -5,6 +5,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.health import router as health_router
 from app.api.evidence import router as evidence_router
+from app.api.sessions import router as sessions_router
+from app.api.family_chat import router as family_chat_router
 from app.core.config import get_settings
 from app.core.db import close_db
 from app.core.logging import setup_logging
@@ -35,6 +37,8 @@ app.add_middleware(
 
 app.include_router(health_router)
 app.include_router(evidence_router)
+app.include_router(sessions_router)
+app.include_router(family_chat_router)
 
 
 @app.get("/")
